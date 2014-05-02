@@ -36,9 +36,9 @@ docker run \
 __OR__ you could write a Dockerfile for your data container, for example in a `wordpress-data/`:
 
 ```Dockerfile
-    FROM        busybox
-    VOLUME      ["/var/lib/mysql", "/var/www/wordpress/wp-content"]
-    ENTRYPOINT  ["/bin/true"]
+FROM        busybox
+VOLUME      ["/var/lib/mysql", "/var/www/wordpress/wp-content"]
+ENTRYPOINT  ["/bin/true"]
 ```
 
 then build and run it:
